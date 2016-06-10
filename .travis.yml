@@ -4,7 +4,11 @@ node_js:
   - "4.2.6"
 before_install:  
 - curl https://install.meteor.com/ | sh
+- meteor install-sdk android
+- meteor add android
 services:
   - mongodb
 # before_script:
 #   - meteor --test --release velocity:METEOR@1.1.0.2_2
+script:
+- meteor build --directory ../output --server http://127.0.0.1
