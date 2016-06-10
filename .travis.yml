@@ -1,10 +1,12 @@
 sudo: required
 language: node_js
 node_js:
-  - "4.2.6"
-before_install:  
+- 4.2.6
+before_install:
 - curl https://install.meteor.com/ | sh
 services:
-  - mongodb
-# before_script:
-#   - meteor --test --release velocity:METEOR@1.1.0.2_2
+- mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: hdAlcncWo1ggduOULB/nlcywESPn+1IW5OGQ3Tz0YLmQEM8RjS6azsZG2P80vunCnQwnYP0GYN0c+DToB3uAS+77uR0s07wpzqu6S+YmoXUIxQYCknXy+K9Mxvxq4A4MSlnY9o70dC8LA5/Hc/MmZBienzrak/8bmzI559NXyA/ffT3s7WmugtbLXw+FZTMGAN9MlRm0bYXm4vLiHd13M+/yiaZDN9L4vMDDJ49zVGUb4PLili2YPnsfQyuN7MMybZlr/0I1bVMxpgMBywLi6hfVPm/5v7Bl1ZIlTw8tzGw4o3/zRNEbN6+eAKNuWNfvaO0t4YhZMtNEY19PJLiG74utpjoybOpNdymmGjS748wZfg79XOBHmAQAhZtRr5nrl4ddjzWnC+ckukydSRpn0juR4dXJBHM2KRLArpL+Dz9arghuT+qj/iC+gN/9xEImG+FyiRfEZWzEeMIcjrJbEYRMAifAavkNRAdhc4kWCvkjauR7rpaVw9konLCXaVU+PIShM0XnpEsLOrJBI898LcWT3jwp0W2t3/XRb2ErAcVE99lykScV48jZYOe60Cj3tQDZ5gyZF7DQxO03C/zsYoEBGQJe0hiD7Snr2TtDrJRsCuyIRLCLfa94KyF+F3StPWSJdJyo88jkRX02qWZoai8oW0ilmzuP7cGhW5/GNBI=
