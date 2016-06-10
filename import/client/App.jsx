@@ -10,6 +10,7 @@ class App extends Component {
     return <div>
       <h2>Hello Meteor!</h2>
       <h3>Auto-deploy to Heroku test.</h3>
+      <h3>Another auto-deploy to Heroku.</h3>
     </div>
   }
 }
